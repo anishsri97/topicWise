@@ -19,7 +19,8 @@ public class frequent
 
        // creating priority queue and sorting logic using interface
        PriorityQueue<Integer> queue = new PriorityQueue<>(new sort(map));
-
+       //
+       //dlog(d) where d is distinct element 
        for(int key:map.keySet())
        {
          queue.add(key);
@@ -27,6 +28,9 @@ public class frequent
         
 
       System.out.println("frequent element");
+      //
+      //klog(d) where k is count of frequent elements
+      // space is O(d)
        while(k-->0)
        {
         System.out.println(queue.poll());
