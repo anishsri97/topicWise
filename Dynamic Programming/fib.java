@@ -6,11 +6,13 @@ class fib
     public static void main(String args[])
     {
         Scanner in = new Scanner(System.in);
+        ////////////
         int n = in.nextInt();
         if(n<=1) return;
         int dp[] = new int[n+1];
         dp[1]=1; 
         System.out.println(fibonacci(dp,n));
+        ///////////
 
     }
 
